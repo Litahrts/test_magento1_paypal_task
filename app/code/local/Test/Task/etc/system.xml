@@ -1,0 +1,41 @@
+<config>
+    <tabs>
+        <task translate="label" module="test_task">
+            <label>Test Task</label>
+            <sort_order>100</sort_order>
+        </task>
+    </tabs>
+    <sections>
+        <task translate="label" module="test_task">
+            <label>Module Options</label>
+            <tab>task</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <test_group translate="label" module="test_task">
+                    <label>Module Options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <test_test_url translate="label">
+                            <label>Api URL</label>
+                            <comment>Api url where data will be send</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>required-entry</validate>
+                            <validate>validate-url</validate>
+                        </test_test_url>
+                    </fields>
+                </test_group>
+            </groups>
+        </task>
+    </sections>
+</config>
